@@ -56,5 +56,12 @@ public class Direccion {
     public void setReferencia(String referencia) {
         this.referencia = referencia;
     }
+
+    @Override
+    public String toString() {
+        return  "\nMunicipio= " + municipio.toString() + "\nCasa= " + noCasa + "\nCalle= " + calle + "\nReferencia= " + referencia;
+    }
+    
+    
     
 }

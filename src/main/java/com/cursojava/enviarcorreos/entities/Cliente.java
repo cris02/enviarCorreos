@@ -12,6 +12,7 @@ package com.cursojava.enviarcorreos.entities;
 public class Cliente {
     private String nombre;
     private short edad;
+    private String correo;
     private String telefono;
     private String documento;
     private Direccion direccion;
@@ -66,6 +67,18 @@ public class Cliente {
     public void setDireccion(Direccion direccion) {
         this.direccion = direccion;
     }
-    
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    @Override
+    public String toString() {
+        return "Informacion:\n" + "Nombre= " + nombre + "\nCorreo= " + correo + "\nDireccion=" + direccion.toString();
+    }
     
 }
